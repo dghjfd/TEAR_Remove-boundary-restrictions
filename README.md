@@ -1,157 +1,201 @@
-# TEAR_NoBounds - Remove Boundary Restrictions
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.2-blue?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/FiveM-Resource-orange?style=for-the-badge" alt="FiveM">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Performance-Optimized-brightgreen?style=for-the-badge" alt="Performance">
+</p>
 
-<div align="center">
+<h1 align="center">🚗 TEAR_NoBounds</h1>
+<p align="center"><b>Remove Boundary Restrictions for FiveM</b></p>
 
-**English** | [中文](#中文说明)
-
-</div>
+<p align="center">
+  <b>English</b> | <a href="#chinese">中文说明</a>
+</p>
 
 ---
 
-## 🎮 Overview
+## 💡 About
 
-Have you experienced your vehicle's engine stalling or your plane mysteriously shutting down after adding extra maps in FiveM that exceed the distance limit? **TEAR_NoBounds** can solve this problem!
+> ⚠️ **Disclaimer**: I am not the original author. This is an optimized version of [iModyHK/limits](https://github.com/iModyHK/limits). All credits go to the original author.
 
-> **Disclaimer / 声明**: I am not the original author of this plugin. I am just a user who optimized the original plugin created by [iModyHK](https://github.com/iModyHK/limits). All credits go to the original author.
-> 
-> **免责声明**: 我并非此插件的原作者。我只是对 [iModyHK](https://github.com/iModyHK/limits) 创建的原插件进行了优化的普通用户。所有功劳归于原作者。
+Have you experienced your vehicle's engine stalling or your plane mysteriously shutting down after adding extra maps in FiveM? **TEAR_NoBounds** solves this by removing world boundary restrictions with **99% less CPU usage** than the original.
 
-This is an optimized FiveM resource that removes world boundary restrictions, allowing players to freely explore addon maps beyond the original GTA V map without vehicle breakdowns.
+---
 
 ## ✨ Features
 
-- 🚗 **Prevents Vehicle Breakdowns** - No more engine stalling near map edges
-- ✈️ **Addon Map Support** - Perfect for servers with custom maps outside the original boundary
-- ⚡ **Performance Optimized** - 99% CPU usage reduction compared to original versions
-- 🔧 **Easy Installation** - Simple drag-and-drop setup
-- 🌍 **Bilingual Support** - Full Chinese and English documentation
+| Feature | Description |
+|---------|-------------|
+| 🚗 **No Vehicle Breakdowns** | Engine won't stall near map edges |
+| ✈️ **Addon Map Ready** | Perfect for custom maps beyond original boundary |
+| ⚡ **99% CPU Reduction** | Optimized from 60fps to 3-second intervals |
+| 🔧 **Plug & Play** | Drag, drop, and done |
 
-## 📦 Installation
+---
 
-1. Download or clone this repository
-2. Drag the `TEAR_NoBounds` folder to your server's `resources` directory
-3. Add `ensure TEAR_NoBounds` to your `server.cfg` file
-4. Restart your server - Done!
+## 📦 Quick Start
 
-## ⚙️ Configuration
+```bash
+# 1. Download & place in resources folder
+/resources/TEAR_NoBounds/
 
-The script is ready to use out of the box. No additional configuration required.
+# 2. Add to server.cfg
+ensure TEAR_NoBounds
 
-### Advanced: Vehicle-Only Mode
+# 3. Restart server & enjoy!
+```
 
-For even better performance, you can enable vehicle-only mode in `client.lua`:
+---
+
+## 📊 Performance
+
+| Metric | Original | TEAR_NoBounds v1.0.2 |
+|--------|----------|---------------------|
+| **Call Frequency** | ~60/sec | 0.33/sec |
+| **CPU Usage** | 🔴 High | 🟢 Minimal |
+| **Effect** | ✅ Works | ✅ Same |
+
+---
+
+## ⚙️ Advanced: Vehicle-Only Mode
+
+Want even better performance? Enable vehicle-only mode:
 
 1. Open `client.lua`
-2. Comment out the main thread (lines 26-52)
-3. Uncomment the optional vehicle detection thread (lines 58-76)
+2. Comment out lines `26-52` (main thread)
+3. Uncomment lines `58-76` (vehicle detection)
 
-This mode only extends the boundary when players are in vehicles, further reducing resource usage.
+---
 
-## 📊 Performance Comparison
+## � Changelog
 
-| Metric | Original Version | TEAR_NoBounds v1.0.2 |
-|--------|-----------------|---------------|
-| Call Frequency | ~60 times/second | 0.33 times/second |
-| CPU Usage | High | Extremely Low |
-| Functionality | ✅ | ✅ Same Effect |
+<details>
+<summary><b>v1.0.2</b> - Current</summary>
 
-## 📝 Changelog
+- ✅ Added original author disclaimer
+- ✅ Proper attribution to iModyHK
+- ✅ Updated documentation
 
-### v1.0.2
-- 📝 Added original author disclaimer in all files
-- 🔗 Added link to original repository (iModyHK/limits)
-- 📄 Updated documentation with proper attribution
+</details>
 
-### v1.0.1
-- ✨ Performance optimization: Changed from per-frame execution to 3-second intervals
-- 📝 Added bilingual comments (Chinese + English)
-- 🔄 Renamed client script to `client.lua` for better clarity
+<details>
+<summary><b>v1.0.1</b></summary>
 
-### v1.0.0
-- Initial release
+- ⚡ Performance optimization (3s intervals)
+- 🌐 Bilingual comments (CN/EN)
+- � Renamed to `client.lua`
+
+</details>
+
+<details>
+<summary><b>v1.0.0</b></summary>
+
+- 🎉 Initial release
+
+</details>
+
+---
 
 ## 🤝 Credits
 
 - **Original Author**: [iModyHK](https://github.com/iModyHK/limits)
-- **Optimized by**: TEARLESSVVOID
-- **Note**: This is an optimized version. All original credits go to iModyHK.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
+- **Optimized by**: [TEARLESSVVOID](https://github.com/dghjfd)
 
 ---
 
-<a name="中文说明"></a>
+<p align="center">Made with ❤️ by TEARLESSVVOID</p>
 
-# 🇨🇳 中文说明
+---
 
-## 🎮 概述
+<a name="chinese"></a>
 
-在FiveM中添加超出距离限制的额外地图后，您是否遇到过车辆发动机熄火或飞机神秘关闭的问题？**TEAR_NoBounds** 可以解决这个问题！
+<h1 align="center">🇨🇳 中文说明</h1>
 
-> **声明**: 我并非此插件的原作者。我只是对 [iModyHK](https://github.com/iModyHK/limits) 创建的原插件进行了优化的普通用户。所有功劳归于原作者。
+> ⚠️ **声明**: 我并非原作者。这是对 [iModyHK/limits](https://github.com/iModyHK/limits) 的优化版本，所有功劳归于原作者。
 
-这是一个优化过的FiveM资源，可以移除世界边界限制，让玩家能够自由探索原版GTA V地图之外的addon地图，而不会导致车辆损坏。
+在FiveM中添加额外地图后，车辆发动机熄火或飞机关闭？**TEAR_NoBounds** 通过移除世界边界限制来解决这个问题，并且**CPU占用降低99%**。
+
+---
 
 ## ✨ 功能特性
 
-- 🚗 **防止车辆损坏** - 在地图边缘不会再出现发动机熄火
-- ✈️ **支持Addon地图** - 完美支持在原地图之外有自定义地图的服务器
-- ⚡ **性能优化** - 相比原版版本减少99%的CPU占用
-- 🔧 **安装简单** - 拖拽式安装设置
-- 🌍 **双语支持** - 完整的中文和英文文档
+| 功能 | 说明 |
+|------|------|
+| 🚗 **防止车辆损坏** | 地图边缘不会发动机熄火 |
+| ✈️ **支持Addon地图** | 完美支持自定义地图 |
+| ⚡ **99% CPU优化** | 从每帧执行优化到3秒间隔 |
+| 🔧 **即插即用** | 拖拽安装，一步到位 |
 
-## 📦 安装步骤
+---
 
-1. 下载或克隆此仓库
-2. 将 `TEAR_NoBounds` 文件夹拖放到服务器的 `resources` 目录
-3. 在 `server.cfg` 文件中添加 `ensure TEAR_NoBounds`
-4. 重启服务器 - 完成！
+## 📦 快速开始
 
-## ⚙️ 配置说明
+```bash
+# 1. 下载并放入 resources 文件夹
+/resources/TEAR_NoBounds/
 
-脚本开箱即用，无需额外配置。
+# 2. 添加到 server.cfg
+ensure TEAR_NoBounds
 
-### 高级选项：仅载具模式
+# 3. 重启服务器，完成！
+```
 
-为了获得更好的性能，您可以在 `client.lua` 中启用仅载具模式：
-
-1. 打开 `client.lua`
-2. 注释掉主线程（第26-52行）
-3. 取消注释可选的载具检测线程（第58-76行）
-
-此模式仅在玩家处于载具中时扩展边界，进一步减少资源占用。
+---
 
 ## 📊 性能对比
 
-| 指标 | 原始版本 | TEAR_NoBounds v1.0.2 |
-|------|---------|---------------|
-| 调用频率 | ~60次/秒 | 0.33次/秒 |
-| CPU占用 | 高 | 极低 |
-| 功能效果 | ✅ | ✅ 相同效果 |
+| 指标 | 原版 | TEAR_NoBounds v1.0.2 |
+|------|------|---------------------|
+| **调用频率** | ~60次/秒 | 0.33次/秒 |
+| **CPU占用** | 🔴 高 | 🟢 极低 |
+| **效果** | ✅ 正常 | ✅ 相同 |
+
+---
+
+## ⚙️ 高级选项：仅载具模式
+
+想要更好的性能？启用仅载具模式：
+
+1. 打开 `client.lua`
+2. 注释掉第 `26-52` 行（主线程）
+3. 取消注释第 `58-76` 行（载具检测）
+
+---
 
 ## 📝 更新日志
 
-### v1.0.2
-- 📝 在所有文件中添加原作者声明
-- 🔗 添加了原仓库链接 (iModyHK/limits)
-- 📄 更新文档，添加正确的归属说明
+<details>
+<summary><b>v1.0.2</b> - 当前版本</summary>
 
-### v1.0.1
-- ✨ 性能优化：从每帧执行改为3秒间隔执行
-- 📝 添加双语注释（中文+英文）
-- 🔄 将客户端脚本重命名为 `client.lua` 以提高清晰度
+- ✅ 添加原作者声明
+- ✅ 正确归属 iModyHK
+- ✅ 更新文档
 
-### v1.0.0
-- 初始版本发布
+</details>
+
+<details>
+<summary><b>v1.0.1</b></summary>
+
+- ⚡ 性能优化（3秒间隔）
+- 🌐 双语注释（中英）
+- � 重命名为 `client.lua`
+
+</details>
+
+<details>
+<summary><b>v1.0.0</b></summary>
+
+- 🎉 初始版本发布
+
+</details>
+
+---
 
 ## 🤝 致谢
 
 - **原作者**: [iModyHK](https://github.com/iModyHK/limits)
-- **优化者**: TEARLESSVVOID
-- **注意**: 这是一个优化版本，所有原始功劳归于 iModyHK
+- **优化者**: [TEARLESSVVOID](https://github.com/dghjfd)
 
-## 📄 许可证
+---
 
-本项目是开源的，遵循MIT许可证。
+<p align="center">由 TEARLESSVVOID 用 ❤️ 制作</p>
