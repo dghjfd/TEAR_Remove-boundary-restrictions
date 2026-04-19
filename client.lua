@@ -7,6 +7,12 @@
 -----------------------------------------------------------
 -----------------------------------------------------------
 
+-- Original Author: iModyHK (https://github.com/iModyHK/limits)
+-- Optimized and maintained by: TEARLESSVVOID
+-- Version: 1.0.2
+-- 原作者: iModyHK (https://github.com/iModyHK/limits)
+-- 优化和维护: TEARLESSVVOID - 我并非原作者，仅是对原插件进行优化的用户
+
 -- Optimization Notes / 优化说明:
 -- 1. Changed Wait(0) to Wait(3000) - Reduces CPU usage by calling every 3 seconds instead of every frame
 --    将Wait(0)改为Wait(3000) - 从每帧调用改为每3秒调用，大幅降低CPU占用
